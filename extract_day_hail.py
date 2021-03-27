@@ -49,7 +49,8 @@ with open(fname) as csv_file:
 					print(f'\tThe hail report time is {storm_datetime}.')
 				#writer = csv.writer(newfname)
 				#print(f'\trow[0] represents {row[0]}.')
-					newfile_towrite.writerow([row[0],row[1],row[2],row[3],row[4],row[5],row[6],row[7],row[8],row[9],
+					new_dateformat = storm_datetime.strftime("%Y-%m-%d")
+					newfile_towrite.writerow([row[0],row[1],row[2],row[3],new_dateformat,row[5],row[6],row[7],row[8],row[9],
 						row[10],row[11],row[12],row[13],row[14],row[15],row[16],row[17],row[18],row[19],
 						row[20],row[21],row[22],row[23],row[24],row[25],row[26],row[27]])
 					line_count += 1
