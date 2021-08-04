@@ -107,7 +107,6 @@ enh_poly = Polygon(enh_points)
 #tstm_points = feature13.shape.points
 #tstm_poly = Polygon(tstm_points)
 
-B
 tstm_hole_collection = tstm_poly.difference(mrgl_poly)
 tstm_hole_poly1 = tstm_hole_collection[0]
 tstm_hole_poly2 = tstm_hole_collection[1]
